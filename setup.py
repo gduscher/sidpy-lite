@@ -28,9 +28,9 @@ requirements = ['numpy>=1.10',
                 ]
 
 setup(
-    name='sidpy',
+    name='sidpy-lite',
     version=__version__,
-    description='Python utilities for storing, visualizing, and processing Spectroscopic and Imaging Data (SID)',
+    description='Python utilities for storing, visualizing, and processing Spectroscopic and Imaging Data (SID) jupyterlite compatible',
     long_description=long_description,
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -51,7 +51,7 @@ setup(
     keywords=['imaging', 'spectra', 'multidimensional', 'scientific',
               'visualization', 'processing', 'storage', 'hdf5'],
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
-    url='https://pycroscopy.github.io/sidpy/about.html',
+    url='https://pycroscopy.github.io/sidpy-lite/about.html',
     license='MIT',
     author='Pycroscopy contributors',
     author_email='pycroscopy@gmail.com',
@@ -65,9 +65,7 @@ setup(
     # dependency_links=[''],
     include_package_data=True,
     # https://setuptools.readthedocs.io/en/latest/setuptools.html#declaring-dependencies
-    extras_require={
-        'MPI': ["mpi4py"]
-    },
+    
     # If there are data files included in your packages that need to be
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.
