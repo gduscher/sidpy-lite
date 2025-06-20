@@ -58,7 +58,7 @@ jobs:
       if: ${{ matrix.python-version == env.PYTHON_MAIN_VERSION }}
       uses: codecov/codecov-action@v5
       with:
-        token: ${{ secrets.CODECOV_TOKEN }}
+        token: ${{ secrets.CodeCov_Token }}
         files: ./coverage.xml
         # directory: ./coverage/reports/
         flags: unittests
